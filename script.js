@@ -35,10 +35,10 @@ document.addEventListener('mousemove', e => {
   let W, H, particles, mouse = { x: -9999, y: -9999 };
 
   const COLORS = [
-    'rgba(121,200,255,',
-    'rgba(91,183,255,',
-    'rgba(148,163,184,',
-    'rgba(15,23,42,'
+    'rgba(192,132,252,',
+    'rgba(255,143,199,',
+    'rgba(226,194,255,',
+    'rgba(130,83,190,'
   ];
 
   function resize() {
@@ -202,22 +202,22 @@ document.querySelectorAll('.stat-num').forEach(el => counterObs.observe(el));
    SKILLS SOLAR SYSTEM
 ══════════════════════════════════════ */
 const SKILLS = [
-  { label:'C',             cat:'Programming', color:'#174c50', size:44, ring:1, angle:0,   pct:'85%' },
-  { label:'C++',           cat:'Programming', color:'#174c50', size:48, ring:1, angle:90,  pct:'80%' },
-  { label:'Java',          cat:'Programming', color:'#174c50', size:48, ring:1, angle:180, pct:'90%' },
-  { label:'Python',        cat:'Programming', color:'#174c50', size:52, ring:1, angle:270, pct:'88%' },
-  { label:'HTML',          cat:'Web',         color:'#214a63', size:48, ring:2, angle:45,  pct:'95%' },
-  { label:'CSS',           cat:'Web',         color:'#214a63', size:46, ring:2, angle:135, pct:'92%' },
-  { label:'JavaScript',    cat:'Web',         color:'#214a63', size:54, ring:2, angle:225, pct:'85%' },
-  { label:'DSA',           cat:'Core',        color:'#4c3b55', size:48, ring:3, angle:20,  pct:'89%' },
-  { label:'OOP',           cat:'Core',        color:'#4c3b55', size:46, ring:3, angle:90,  pct:'85%' },
-  { label:'SQL',           cat:'Core',        color:'#4c3b55', size:44, ring:3, angle:160, pct:'80%' },
-  { label:'AutoCAD',       cat:'Tools',       color:'#554327', size:54, ring:3, angle:230, pct:'90%' },
-  { label:'GitHub',        cat:'Tools',       color:'#554327', size:50, ring:3, angle:300, pct:'95%' },
-  { label:'Teamwork',      cat:'Soft',        color:'#28503f', size:52, ring:4, angle:60,  pct:'90%' },
-  { label:'Time Mgmt',     cat:'Soft',        color:'#28503f', size:50, ring:4, angle:150, pct:'85%' },
-  { label:'Adaptability',  cat:'Soft',        color:'#28503f', size:54, ring:4, angle:240, pct:'88%' },
-  { label:'Problem Solving',cat:'Soft',       color:'#28503f', size:62, ring:4, angle:330, pct:'92%' },
+  { label:'C',             cat:'Programming', color:'#59317a', size:44, ring:1, angle:0,   pct:'85%' },
+  { label:'C++',           cat:'Programming', color:'#59317a', size:48, ring:1, angle:90,  pct:'80%' },
+  { label:'Java',          cat:'Programming', color:'#59317a', size:48, ring:1, angle:180, pct:'90%' },
+  { label:'Python',        cat:'Programming', color:'#59317a', size:52, ring:1, angle:270, pct:'88%' },
+  { label:'HTML',          cat:'Web',         color:'#7c3d72', size:48, ring:2, angle:45,  pct:'95%' },
+  { label:'CSS',           cat:'Web',         color:'#7c3d72', size:46, ring:2, angle:135, pct:'92%' },
+  { label:'JavaScript',    cat:'Web',         color:'#7c3d72', size:54, ring:2, angle:225, pct:'85%' },
+  { label:'DSA',           cat:'Core',        color:'#593c68', size:48, ring:3, angle:20,  pct:'89%' },
+  { label:'OOP',           cat:'Core',        color:'#593c68', size:46, ring:3, angle:90,  pct:'85%' },
+  { label:'SQL',           cat:'Core',        color:'#593c68', size:44, ring:3, angle:160, pct:'80%' },
+  { label:'AutoCAD',       cat:'Tools',       color:'#754766', size:54, ring:3, angle:230, pct:'90%' },
+  { label:'GitHub',        cat:'Tools',       color:'#754766', size:50, ring:3, angle:300, pct:'95%' },
+  { label:'Teamwork',      cat:'Soft',        color:'#553c70', size:52, ring:4, angle:60,  pct:'90%' },
+  { label:'Time Mgmt',     cat:'Soft',        color:'#553c70', size:50, ring:4, angle:150, pct:'85%' },
+  { label:'Adaptability',  cat:'Soft',        color:'#553c70', size:54, ring:4, angle:240, pct:'88%' },
+  { label:'Problem Solving',cat:'Soft',       color:'#553c70', size:62, ring:4, angle:330, pct:'92%' },
 ];
 const RING_RADII  = { 1:0.28, 2:0.40, 3:0.55, 4:0.70 };
 const RING_SPEEDS = { 1:0.12, 2:-0.09, 3:0.07, 4:-0.05 };
