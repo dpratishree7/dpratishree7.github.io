@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pratishree Dhumal — Computer Engineering Student & Developer. Portfolio showcasing projects in Java, Python, Web Development." />
+  <title>Pratishree Dhumal | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursorGlow" class="cursor-glow"></div>
+
+  <!-- Dark Red Ambient Orbs -->
+  <div class="ambient-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  
+  <!-- Particle Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand">PD</a>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home"        class="nav-link">Home</a></li>
+          <li><a href="#about"       class="nav-link">About</a></li>
+          <li><a href="#education"   class="nav-link">Education</a></li>
+          <li><a href="#skills"      class="nav-link">Skills</a></li>
+          <li><a href="#projects"    class="nav-link">Projects</a></li>
+          <li><a href="#internships" class="nav-link">Experience</a></li>
+          <li><a href="#contact"     class="nav-link">Contact</a></li>
+          <li><a href="resume.pdf" download class="nav-resume">Resume ↓</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li><a href="#home"        class="m-link">Home</a></li>
+      <li><a href="#about"       class="m-link">About</a></li>
+      <li><a href="#education"   class="m-link">Education</a></li>
+      <li><a href="#skills"      class="m-link">Skills</a></li>
+      <li><a href="#projects"    class="m-link">Projects</a></li>
+      <li><a href="#internships" class="m-link">Experience</a></li>
+      <li><a href="#contact"     class="m-link">Contact</a></li>
+      <li><a href="resume.pdf" download class="m-link m-resume">Resume ↓</a></li>
+    </ul>
+  </div>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-center">
+      <p class="hero-eyebrow"><span></span> Computer Engineering Student <b>·</b> Developer</p>
+      <div class="hero-name-wrap">
+        <h1 class="hero-name-large" id="heroName" data-text="PRATISHREE DHUMAL">PRATISHREE<br>DHUMAL</h1>
+      </div>
+      <p class="hero-summary">I build practical software and thoughtful digital experiences, with a growing focus on machine learning and web development.</p>
+      <div class="hero-actions">
+        <a class="hero-action hero-action-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+        <a class="hero-action hero-action-secondary" href="#about">A little about me</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-tag reveal">Who I Am</div>
+      <h2 class="section-heading reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-card-wrap reveal">
+          <div class="about-text-card glassmorphism">
+            <p class="about-p">I am a detail-oriented Engineer-in-training who views every technical challenge as an opportunity for better design. While my core focus lies in technical implementation and logic, I bring a unique creative perspective to my work—ensuring that every project is as intuitive and user-friendly as it is functional.</p>
+            <p class="about-p">I thrive at the intersection of analytical thinking and effective communication. I take pride in my ability to bridge the gap between complex systems and clear, impactful presentation. Whether it’s structuring a project roadmap or visualizing data, I focus on making technical concepts accessible and organized.</p>
+            <p class="about-p">Driven by a "continuous learner" mindset, I am eager to contribute to a forward-thinking team where I can apply my problem-solving skills to build efficient, real-world solutions.</p>
+          </div>
+        </div>
+        <div class="about-photo-container reveal">
+          <div class="photo-wrap" style="transform: scale(0.9); margin: 0 auto;">
+            <div class="photo-ring ring-outer"></div>
+            <div class="photo-ring ring-inner"></div>
+            <div class="photo-ring ring-pulse"></div>
+            <img src="profile.jpg" alt="Pratishree Dhumal — professional photo" class="hero-photo" id="heroPhoto" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ EDUCATION ══════════════ -->
+  <section id="education" class="education-section">
+    <div class="container">
+      <div class="section-tag reveal">My Journey</div>
+      <h2 class="section-heading reveal">Qualifications</h2>
+      <div class="timeline-wrap">
+        
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content glassmorphism">
+            <div class="tl-year">2024 &ndash; 2028</div>
+            <h3 class="tl-title">Bachelor of Engineering in Computer Engineering</h3>
+            <p class="tl-inst">Vidyalankar Institute of Technology, Mumbai</p>
+            <p class="tl-desc">Currently in Second Year, with a First Year CGPA of 9.95, reflecting strong academic performance and a solid grasp of core engineering fundamentals.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content glassmorphism">
+            <div class="tl-year">2022 &ndash; 2024</div>
+            <h3 class="tl-title">Higher Secondary Education (HSC)</h3>
+            <p class="tl-inst">Seth Hirachand Mutha College, Maharashtra State Board</p>
+            <p class="tl-desc">Secured 80.83%, with a focus on the science stream, strengthening analytical thinking and problem-solving abilities.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content glassmorphism">
+            <div class="tl-year">2022</div>
+            <h3 class="tl-title">Secondary Education (SSC)</h3>
+            <p class="tl-inst">Don Bosco High School, Maharashtra State Board</p>
+            <p class="tl-desc">Achieved 94.80%, demonstrating academic consistency and excellence in foundational education.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SKILLS ══════════════ -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-tag reveal">What I Know</div>
+      <h2 class="section-heading reveal">Skills</h2>
+      <div class="skills-universe reveal" id="skillsUniverse">
+        <div class="orbit-rings" id="orbitRings"></div>
+        <div class="universe-center">My<br>Skillset</div>
+      </div>
+      <div class="skill-legend reveal" style="margin-top: 8rem; position: relative; z-index: 5;">
+        <div class="legend-item"><span class="ldot legend-programming"></span>Programming</div>
+        <div class="legend-item"><span class="ldot legend-web"></span>Web Development</div>
+        <div class="legend-item"><span class="ldot legend-core"></span>Core Concepts</div>
+        <div class="legend-item"><span class="ldot legend-tools"></span>Tools</div>
+        <div class="legend-item"><span class="ldot legend-soft"></span>Soft Skills</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PROJECTS ══════════════ -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-tag reveal">What I've Built</div>
+      <h2 class="section-heading reveal">Projects</h2>
+    </div>
+    <div class="projects-track-wrap">
+      <div class="projects-track" id="projectsTrack">
+
+        <div class="proj-slide reveal">
+          <div class="proj-num">01</div>
+          <div class="proj-body">
+            <h3 class="proj-title">RailEase</h3>
+            <p class="proj-sub">Bus Route Visualization System (Java Swing)</p>
+            <p class="proj-desc">Desktop-based application for efficient visualization and exploration of bus routes. Implements structured navigation logic to enhance route clarity and user interaction.</p>
+            <div class="proj-tech"><span>Java Swing</span><span>OOP</span><span>UI Design</span></div>
+          </div>
+        </div>
+
+        <div class="proj-slide reveal">
+          <div class="proj-num">02</div>
+          <div class="proj-body">
+            <h3 class="proj-title">02 — Smart Canteen</h3>
+            <p class="proj-sub">Web Development</p>
+            <p class="proj-desc"><strong>Technologies:</strong> Python, Flask, SQLite, Jinja</p>
+            <p class="proj-desc">A web-based canteen management system with user/admin functionality, menu management, cart handling and order status tracking.</p>
+            <div class="proj-tech"><span>Python</span><span>Flask</span><span>SQLite</span><span>Jinja</span></div>
+          </div>
+        </div>
+
+        <div class="proj-slide reveal">
+          <div class="proj-num">03</div>
+          <div class="proj-body">
+            <h3 class="proj-title">03 — CrowdSense</h3>
+            <p class="proj-sub">AI / Machine Learning</p>
+            <p class="proj-desc"><strong>Technologies:</strong> Python, Machine Learning, Flask/Web technologies</p>
+            <p class="proj-desc">An AI-based project exploring event and location-related information for crowd analysis and event management support.</p>
+            <div class="proj-tech"><span>Python</span><span>Machine Learning</span><span>Flask</span></div>
+          </div>
+        </div>
+
+        <div class="proj-slide reveal">
+          <div class="proj-num">04</div>
+          <div class="proj-body">
+            <h3 class="proj-title">04 — Green Logistics</h3>
+            <p class="proj-sub">Machine Learning</p>
+            <p class="proj-desc"><strong>Technologies:</strong> Python, Scikit-learn</p>
+            <p class="proj-desc">A machine learning project focused on predicting carbon emissions associated with logistics operations.</p>
+            <div class="proj-tech"><span>Python</span><span>Scikit-learn</span><span>ML</span></div>
+          </div>
+        </div>
+
+        <div class="proj-slide reveal">
+          <div class="proj-num">05</div>
+          <div class="proj-body">
+            <h3 class="proj-title">05 — Startup Founder Burnout Risk</h3>
+            <p class="proj-sub">Machine Learning</p>
+            <p class="proj-desc"><strong>Technologies:</strong> Python, Scikit-learn, Logistic Regression</p>
+            <p class="proj-desc">A classification project exploring burnout-risk prediction using relevant founder attributes.</p>
+            <div class="proj-tech"><span>Python</span><span>Scikit-learn</span><span>Logistic Regression</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="slider-controls reveal">
+      <button class="slider-btn" id="prevBtn" aria-label="Previous project">←</button>
+      <div class="slider-dots" id="sliderDots"></div>
+      <button class="slider-btn" id="nextBtn" aria-label="Next project">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- ══════════════ EXPERIENCE / LEARNING ══════════════ -->
+  <section id="internships" class="internships-section">
+    <div class="container">
+      <div class="section-tag reveal">Experience</div>
+      <h2 class="section-heading reveal"># EXPERIENCE / LEARNING</h2>
+      <div class="internships-grid">
+
+        <div class="intern-card reveal">
+          <div class="intern-timeline">
+            <div class="intern-dot"></div>
+            <div class="intern-line"></div>
+          </div>
+          <div class="intern-content">
+            <div class="intern-header">
+              <div>
+                <h3 class="intern-title">NPTEL — Programming in Java</h3>
+                <p class="intern-company">Online learning certification</p>
+              </div>
+              <span class="intern-period">Score: 85%</span>
+            </div>
+            <p class="intern-desc"><strong>Score:</strong> 85%</p>
+            <div class="proj-tech"><span>Java</span><span>Core Programming</span><span>Certification</span></div>
+          </div>
+        </div>
+
+        <div class="intern-card reveal">
+          <div class="intern-timeline">
+            <div class="intern-dot"></div>
+            <div class="intern-line"></div>
+          </div>
+          <div class="intern-content">
+            <div class="intern-header">
+              <div>
+                <h3 class="intern-title">L&amp;T Machine Learning Course</h3>
+                <p class="intern-company">Learning and skill development</p>
+              </div>
+              <span class="intern-period">Coursework</span>
+            </div>
+            <ul class="intern-desc" style="padding-left:1.2rem; margin-bottom:0;">
+              <li>Machine Learning</li>
+              <li>Practical modelling</li>
+              <li>Green Logistics</li>
+              <li>Startup Founder Burnout Risk</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="intern-card reveal">
+          <div class="intern-timeline">
+            <div class="intern-dot"></div>
+          </div>
+          <div class="intern-content">
+            <div class="intern-header">
+              <div>
+                <h3 class="intern-title">HCC — Archives &amp; Documentation</h3>
+                <p class="intern-company">College committee experience</p>
+              </div>
+              <span class="intern-period">Committee role</span>
+            </div>
+            <ul class="intern-desc" style="padding-left:1.2rem; margin-bottom:0;">
+              <li>Event documentation</li>
+              <li>Creative/content work</li>
+              <li>Event-related coordination</li>
+              <li>Publicity support</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-tag reveal">Say Hello</div>
+      <h2 class="section-heading reveal">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info-panel reveal">
+          <h3>Let's Collaborate</h3>
+          <p>I'm always open to new opportunities and interesting projects. Feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:pratishree17@gmail.com" class="c-link">
+              <div class="c-icon">✉️</div>
+              <div><span class="c-label">Email</span><span class="c-val">pratishree17@gmail.com</span></div>
+            </a>
+            <a href="tel:+917506258497" class="c-link">
+              <div class="c-icon">📱</div>
+              <div><span class="c-label">Phone</span><span class="c-val">+91 7506258497</span></div>
+            </a>
+            <div class="c-link">
+              <div class="c-icon">📍</div>
+              <div><span class="c-label">Location</span><span class="c-val">Mumbai, India</span></div>
+            </div>
+            <a href="https://www.linkedin.com/in/pratishree-dhumal" target="_blank" rel="noopener noreferrer" class="c-link">
+              <div class="c-icon">🔗</div>
+              <div><span class="c-label">LinkedIn</span><span class="c-val">pratishree-dhumal</span></div>
+            </a>
+            <a href="resume.pdf" download class="resume-dl">Resume ↓</a>
+          </div>
+        </div>
+        <form class="c-form reveal" id="contactForm" action="#" method="POST">
+          <p>Have a question or want to work together? Drop me a message.</p>
+          <div class="form-field">
+            <input type="text" id="name" name="name" placeholder=" " required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-field">
+            <input type="email" id="email" name="email" placeholder=" " required />
+            <label for="email">Email Address</label>
+          </div>
+          <div class="form-field">
+            <textarea id="message" name="message" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="c-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Designed by Pratishree Dhumal</span>
+      <span class="footer-dot">·</span>
+      <span>2025</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- ══════════════ GLASS MORPH ENGINE ══════════════ -->
+  <svg style="display:none;" aria-hidden="true">
+    <defs>
+      <filter id="glass-morph-filter">
+        <!-- Creates the distorted blob shape -->
+        <feTurbulence type="fractalNoise" baseFrequency="0.04 0.04" numOctaves="3" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="35" xChannelSelector="R" yChannelSelector="G" result="blob" />
+        
+        <!-- Controls the edges and softness -->
+        <feGaussianBlur in="blob" stdDeviation="4" result="softBlob" />
+        
+        <!-- Smoothly morphs from blob to text shape -->
+        <feComposite in="SourceGraphic" in2="softBlob" operator="in" />
+      </filter>
+      
+      <!-- Subtle liquid shimmer filter -->
+      <filter id="glass-shimmer">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015 0.02" numOctaves="2" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+      </filter>
+    </defs>
+  </svg>
+</body>
+</html>
